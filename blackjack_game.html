@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BlackJack</title>
+    <script src = "jquery.js"></script>
+    <script src = "blackjack_game.js"></script>
+    <link rel="stylesheet" href="animate.css">
+    <style>
+
+      *{
+        box-sizing: border-box;
+      }
+
+      #table{
+        border : 4px solid black;
+        border-radius: 20px;
+        padding: 50px 10px 50px 10px;
+        background: linear-gradient(#4286f4,#42f4bc);
+      }
+
+      .buttons{
+        text-align: center;
+      }
+      button{
+        margin-top: 15px;
+        padding : 10px;
+        font-size: 1em;
+        border-radius: 15px;
+        background-color: white;
+        opacity: 0.85;
+      }
+
+      label{
+        font-size: 1.5em;
+        margin-left: 10px;
+      }
+
+      #messages{
+        text-align: center;
+        font-size: 1.8em;
+      }
+
+      #dealer-hand, #player-hand{
+        height: 120px;
+        background-color: lightgray;
+        border-radius: 15px;
+        opacity: 1;
+        margin: 10px;
+      }
+
+      .cards{
+        display:inline-block;
+        height:100px;
+        margin:10px;
+        opacity: 1;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="table">
+      <div id="messages"></div>
+      <label>Dealer: </label>
+      <label id="dealer-points" class="points"></label>
+      <div id="dealer-hand" class="hand">
+
+      </div>
+      <label>Player: </label>
+      <label id="player-points" class="points"></label>
+      <div id="player-hand" class="hand">
+
+      </div>
+      <div class="buttons">
+        <button id="deal-button">Deal</button>
+        <button id="hit-button">Hit</button>
+        <button id="stand-button">Stand</button>
+      </div>
+      </div>
+
+  </body>
+</html>
